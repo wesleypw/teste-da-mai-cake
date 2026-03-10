@@ -133,6 +133,14 @@ footer {
     margin-bottom: 0px;
 }
 
+footer .row {
+    justify-content: center;
+}
+
+footer .col-md-4 {
+    text-align: center;
+}
+
 footer p {
     color: #fff;
     margin: 5px;
