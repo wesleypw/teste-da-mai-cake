@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Doceria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body style="background-color: #D2691E;">
+<header>
+    <img class="logo" src="img/logo.png" alt="logo da doceria">
+    <h1>Entre em Contato</h1>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
+
+<div class="container">
+    <section id="contato" class="content-section" style="background-color: #f5f5dc; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+        <h2>Entre em Contato</h2>
+        <p>Adoraríamos ouvir de você! Se tiver alguma dúvida, sugestão ou quiser fazer um pedido, use uma das formas abaixo:</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Informações de Contato</h3>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@doceria.com.br</p>
+                <p><strong>Endereço:</strong> Rua das Doces, 123 - Bairro Feliz - São Paulo/SP</p>
+                
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 14h</p>
+                <p>Domingo: Fechado</p>
+                
+                <h3>Redes Sociais</h3>
+                <p><strong>Facebook:</strong> @doceria</p>
+                <p><strong>Instagram:</strong> @doceria</p>
+                <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+            </div>
+            
+            <div class="col-md-6">
+                <h3>Formulário de Contato</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <select class="form-control" id="assunto">
+                            <option value="">Selecione um assunto</option>
+                            <option value="pedido">Fazer pedido</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Vlibras - Acessibilidade -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<footer style="background-color: #8B4513; color: white; text-align: center; padding: 20px; margin-top: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Informações</h5>
+                <p><a href="index.html#faq" style="color: white;">FAQ</a></p>
+                <p><a href="index.html#trabalhe" style="color: white;">Trabalhe Conosco</a></p>
+                <p><a href="#" style="color: white;">Política de Privacidade</a></p>
+                <p><a href="#" style="color: white;">Termos de Uso</a></p>
+            </div>
+        </div>
+        <hr style="background-color: white;">
+        <p>&copy; 2024 Doceria. Todos os direitos reservados.</p>
+    </div>
+
+<div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Ao se cadastrar em nossa doceria, você concorda com nossos termos de uso...</p>
+                <p>1. Aceitação dos Termos</p>
+                <p>2. Uso dos Serviços</p>
+                <p>3. Privacidade e Dados</p>
+                <p>4. Propriedade Intelectual</p>
+                <p>5. Cancelamento e Reembolso</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Política de Privacidade -->
+<div class="modal fade" id="privacidadeModal" tabindex="-1" role="dialog" aria-labelledby="privacidadeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="privacidadeModalLabel">Política de Privacidade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Nossa política de privacidade descreve como coletamos, usamos e protegemos suas informações...</p>
+                <p>1. Informações Coletadas</p>
+                <p>2. Uso das Informações</p>
+                <p>3. Compartilhamento de Dados</p>
+                <p>4. Segurança</p>
+                <p>5. Seus Direitos</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <p>Siga-nos nas redes sociais: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">WhatsApp</a></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

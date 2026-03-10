@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Doceria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body style="background-color: #D2691E;">
+<header>
+    <img class="logo" src="img/logo.png" alt="logo da doceria">
+    <h1>Cadastre-se</h1>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
+
+<div class="container">
+    <section id="cadastro" class="content-section" style="background-color: #f5f5dc; padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+        <h2>Cadastre-se na Doceria</h2>
+        <p>Cadastre-se em nossa lista para receber novidades, promoções exclusivas e estar por dentro de todos os nossos lançamentos!</p>
+        
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-nome">Nome Completo:</label>
+                                <input type="text" class="form-control" id="cad-nome" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-sobrenome">Sobrenome:</label>
+                                <input type="text" class="form-control" id="cad-sobrenome" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-email">Email:</label>
+                                <input type="email" class="form-control" id="cad-email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-confirmar-email">Confirmar Email:</label>
+                                <input type="email" class="form-control" id="cad-confirmar-email" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-telefone">Telefone:</label>
+                                <input type="tel" class="form-control" id="cad-telefone" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-nascimento">Data de Nascimento:</label>
+                                <input type="date" class="form-control" id="cad-nascimento">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-senha">Senha:</label>
+                                <input type="password" class="form-control" id="cad-senha" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-confirmar-senha">Confirmar Senha:</label>
+                                <input type="password" class="form-control" id="cad-confirmar-senha" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cad-endereco">Endereço:</label>
+                        <input type="text" class="form-control" id="cad-endereco" placeholder="Rua, número, bairro">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cad-cidade">Cidade:</label>
+                                <input type="text" class="form-control" id="cad-cidade">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cad-estado">Estado:</label>
+                                <select class="form-control" id="cad-estado">
+                                    <option value="">Selecione</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="cad-cep">CEP:</label>
+                                <input type="text" class="form-control" id="cad-cep" placeholder="XXXXX-XXX">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Preferências de Produtos:</label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="chocolate">
+                                    <label class="form-check-label" for="chocolate">Doces de Chocolate</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="bolos">
+                                    <label class="form-check-label" for="bolos">Bolos</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cupcakes">
+                                    <label class="form-check-label" for="cupcakes">Cupcakes</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cookies">
+                                    <label class="form-check-label" for="cookies">Cookies</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="tortas">
+                                    <label class="form-check-label" for="tortas">Tortas</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brigadeiros">
+                                    <label class="form-check-label" for="brigadeiros">Brigadeiros</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sorvetes">
+                                    <label class="form-check-label" for="sorvetes">Sorvetes</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="diet">
+                                    <label class="form-check-label" for="diet">Opções Diet</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cad-newsletter" required>
+                            <label class="form-check-label" for="cad-newsletter">
+                                Deseja receber nossa newsletter semanal com promoções e novidades?
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cad-termos" required>
+                            <label class="form-check-label" for="cad-termos">
+                                Li e aceito os <a href="#" data-toggle="modal" data-target="#termosModal">termos de uso</a> e a <a href="#" data-toggle="modal" data-target="#privacidadeModal">política de privacidade</a>.
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Vlibras - Acessibilidade -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<footer style="background-color: #8B4513; color: white; text-align: center; padding: 20px; margin-top: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Informações</h5>
+                <p><a href="index.html#faq" style="color: white;">FAQ</a></p>
+                <p><a href="index.html#trabalhe" style="color: white;">Trabalhe Conosco</a></p>
+                <p><a href="#" style="color: white;">Política de Privacidade</a></p>
+                <p><a href="#" style="color: white;">Termos de Uso</a></p>
+            </div>
+
+        </div>
+        <hr style="background-color: white;">
+        <p>&copy; 2024 Doceria. Todos os direitos reservados.</p>
+    </div>
+
+<div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Ao se cadastrar em nossa doceria, você concorda com nossos termos de uso...</p>
+                <p>1. Aceitação dos Termos</p>
+                <p>2. Uso dos Serviços</p>
+                <p>3. Privacidade e Dados</p>
+                <p>4. Propriedade Intelectual</p>
+                <p>5. Cancelamento e Reembolso</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Política de Privacidade -->
+<div class="modal fade" id="privacidadeModal" tabindex="-1" role="dialog" aria-labelledby="privacidadeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="privacidadeModalLabel">Política de Privacidade</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Nossa política de privacidade descreve como coletamos, usamos e protegemos suas informações...</p>
+                <p>1. Informações Coletadas</p>
+                <p>2. Uso das Informações</p>
+                <p>3. Compartilhamento de Dados</p>
+                <p>4. Segurança</p>
+                <p>5. Seus Direitos</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <p>Siga-nos nas redes sociais: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">WhatsApp</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

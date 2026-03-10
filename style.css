@@ -15,6 +15,73 @@ header img {
     width: 150px;
 }
 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+nav {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #D2691E;
+}
+
+/* Estilos para a página sobre */
+.content-section {
+    box-shadow: rgba(0, 0, 0, 0.438) 5px 5px 12px -4px;
+}
+
+.content-section h2 {
+    color: #8B4513;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D2691E;
+    padding-bottom: 10px;
+}
+
+.content-section h3 {
+    color: #8B4513;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    margin-bottom: 20px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background-color: #D2691E;
+    border-color: #D2691E;
+}
+
+.btn-primary:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.form-control:focus {
+    border-color: #D2691E;
+    box-shadow: 0 0 0 0.2rem rgba(210, 105, 30, 0.25);
+}
 .carousel {
     margin-top: 20px;
     width: 100px; /* Ajuste o tamanho conforme necessário */
@@ -56,6 +123,27 @@ header img {
 
 .menu-card .carousel {
     margin-right: 20px;
+}
+
+footer {
+    background-color: #e9af86;
+    text-align: center;
+    margin-top: 20px;
+    padding: 2px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    color: #fff;
+    margin: 5px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 
