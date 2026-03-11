@@ -57,10 +57,10 @@
                 <p>R$ 5,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
+                <p><strong>Ingredientes:</strong> Chocolate, manteiga, açúcar, ovos, farinha de trigo e nozes</p>
             </div>
             <div class="menu-item">
-                
+                <p><strong>Tempo de preparo:</strong> 45 minutos</p>
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
@@ -100,10 +100,10 @@
                 <p>R$ 10,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
+                <p><strong>Ingredientes:</strong> Chocolate 70%, manteiga, açúcar, ovos, farinha e fermento</p>
             </div>
             <div class="menu-item">
-                
+                <p><strong>Tempo de preparo:</strong> 1 hora</p>
             </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
@@ -143,8 +143,10 @@
                 <p>R$ 15,00</p>
             </div>
             <div class="menu-item">
-                <p>ingredientes </p>
-                
+                <p><strong>Ingredientes:</strong> Farinha, manteiga, açúcar, ovos, leite e baunilha</p>
+            </div>
+            <div class="menu-item">
+                <p><strong>Tempo de preparo:</strong> 30 minutos</p>
             </div>
             
             <!-- Adicione mais itens conforme necessário -->
@@ -185,10 +187,10 @@
               <p>R$ 5,00</p>
           </div>
           <div class="menu-item">
-              <p>ingredientes </p>
+              <p><strong>Ingredientes:</strong> Farinha, manteiga, açúcar mascavo, ovos, chocolate chips e aveia</p>
           </div>
           <div class="menu-item">
-              
+              <p><strong>Tempo de preparo:</strong> 25 minutos</p>
           </div>
             <!-- Adicione mais itens conforme necessário -->
         </div>
@@ -202,10 +204,10 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>Informações</h5>
-                <p><a href="index.html#faq" style="color: white;">FAQ</a></p>
-                <p><a href="index.html#trabalhe" style="color: white;">Trabalhe Conosco</a></p>
-                <p><a href="#" style="color: white;">Política de Privacidade</a></p>
-                <p><a href="#" style="color: white;">Termos de Uso</a></p>
+                <p><a href="#faq" style="color: white;" onclick="mostrarFAQ(); return false;">FAQ</a></p>
+                <p><a href="#trabalhe" style="color: white;" onclick="mostrarTrabalhe(); return false;">Trabalhe Conosco</a></p>
+                <p><a href="#" style="color: white;" onclick="mostrarPrivacidade(); return false;">Política de Privacidade</a></p>
+                <p><a href="#" style="color: white;" onclick="mostrarTermos(); return false;">Termos de Uso</a></p>
             </div>
             
         </div>
@@ -213,55 +215,7 @@
         <p>&copy; 2026 Doceria. Todos os direitos reservados.</p>
     </div>
 
-<div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Ao se cadastrar em nossa doceria, você concorda com nossos termos de uso...</p>
-                <p>1. Aceitação dos Termos</p>
-                <p>2. Uso dos Serviços</p>
-                <p>3. Privacidade e Dados</p>
-                <p>4. Propriedade Intelectual</p>
-                <p>5. Cancelamento e Reembolso</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Política de Privacidade -->
-<div class="modal fade" id="privacidadeModal" tabindex="-1" role="dialog" aria-labelledby="privacidadeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="privacidadeModalLabel">Política de Privacidade</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Nossa política de privacidade descreve como coletamos, usamos e protegemos suas informações...</p>
-                <p>1. Informações Coletadas</p>
-                <p>2. Uso das Informações</p>
-                <p>3. Compartilhamento de Dados</p>
-                <p>4. Segurança</p>
-                <p>5. Seus Direitos</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-    <p>Siga-nos nas redes sociais: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">WhatsApp</a></p>
+    <p>Siga-nos nas redes sociais: <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></p>
 </footer>
 
 <!-- Vlibras - Acessibilidade -->
@@ -279,5 +233,95 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+function mostrarFAQ() {
+    var faqText = "=== FAQ - PERGUNTAS FREQUENTES ===\n\n" +
+                 "1. COMO FAÇO PARA FAZER UM PEDIDO?\n" +
+                 "Você pode fazer seu pedido de três formas:\n" +
+                 "- Pelo nosso formulário de cadastro no site\n" +
+                 "- Pelo WhatsApp (11) 9999-9999\n" +
+                 "- Ligando diretamente para nossa loja\n\n" +
+                 "2. QUAL O PRAZO DE ENTREGA?\n" +
+                 "- Pedidos mínimos: 24 horas de antecedência\n" +
+                 "- Pedidos acima de 50 unidades: 48 horas\n" +
+                 "- Entrega em toda região metropolitana de SP\n\n" +
+                 "3. FORMAS DE PAGAMENTO?\n" +
+                 "- Cartão de crédito (todas bandeiras)\n" +
+                 "- Cartão de débito\n" +
+                 "- PIX\n" +
+                 "- Transferência bancária\n" +
+                 "- Dinheiro\n\n" +
+                 "4. COMO ARMAZENAR OS DOCES?\n" +
+                 "- Bolos e tortas: geladeira, consumir em 3 dias\n" +
+                 "- Brownies e cookies: temperatura ambiente, 5 dias\n\n"                  
+    
+    alert(faqText);
+}
+
+function mostrarTrabalhe() {
+    var trabalhoText = "=== TRABALHE CONOSCO ===\n\n" +
+                    "🎯 REQUISITOS:\n" +
+                    "• Boa comunicação\n" +
+                    "• Organização e pontualidade\n" +
+                    "• Paixão por confeitaria\n" +
+                    "• Disponibilidade para fins de semana\n" +
+                    "• Ensino médio completo\n\n" +
+                    "🎁 BENEFÍCIOS:\n" +
+                    "• Salário compatível com mercado\n" +
+                    "• Vale-transporte e alimentação\n" +
+                    "• Desconto em produtos\n" +
+                    "• Oportunidade de crescimento\n\n" +
+                    "📝 COMO SE CANDIDATAR:\n" +
+                    "Envie currículo para: rh@doceria.com\n" +
+                    "Assunto: 'Vaga [Nome] - [Seu Nome]'\n" +
+                    "Telefone: (11) 9999-9999";
+    
+    alert(trabalhoText);
+}
+
+function mostrarPrivacidade() {
+    var privacidadeText = "=== POLÍTICA DE PRIVACIDADE ===\n\n" +
+                       "1. INFORMAÇÕES COLETADAS:\n" +
+                       "Coletamos nome, e-mail, telefone, endereço e dados de pagamento\n" +
+                       "essenciais para prestar nossos serviços.\n\n" +
+                       "2. USO DAS INFORMAÇÕES:\n" +
+                       "Processar pedidos, comunicação, informações sobre produtos\n" +
+                       "e melhoria do atendimento. Nunca compartilhamos sem autorização.\n\n" +
+                       "3. COMPARTILHAMENTO:\n" +
+                       "Apenas com parceiros essenciais (entregas e pagamentos)\n" +
+                       "que seguem padrões rigorosos de segurança.\n\n" +
+                       "4. SEGURANÇA:\n" +
+                       "Criptografia SSL em transações e servidores seguros.\n" +
+                       "Equipe treinada para proteger seus dados.\n\n" +
+                       "5. SEUS DIREITOS:\n" +
+                       "Acessar, corrigir ou excluir dados a qualquer momento.\n" +
+                       "Contato: privacidade@doceria.com | (11) 9999-9999";
+    
+    alert(privacidadeText);
+}
+
+function mostrarTermos() {
+    var termosText = "=== TERMOS DE USO ===\n\n" +
+                   "1. ACEITAÇÃO:\n" +
+                   "Ao acessar nosso site e usar nossos serviços, você concorda\n" +
+                   "integralmente com estes Termos de Uso.\n\n" +
+                   "2. USO DOS SERVIÇOS:\n" +
+                   "Serviços destinados a maiores de 18 anos ou acompanhados.\n" +
+                   "Compromete-se a fornecer informações verdadeiras.\n\n" +
+                   "3. PEDIDOS E PAGAMENTOS:\n" +
+                   "Pedidos sujeitos à disponibilidade e confirmação.\n" +
+                   "Preços podem mudar, mas pedidos confirmados mantêm valor.\n\n" +
+                   "4. PROPRIEDADE INTELECTUAL:\n" +
+                   "Todo conteúdo do site é protegido por direitos autorais.\n" +
+                   "Proibida reprodução sem autorização expressa.\n\n" +
+                   "5. CANCELAMENTO E REEMBOLSO:\n" +
+                   "Cancelamento com 24h: reembolso integral.\n" +
+                   "Menos de 24h: taxa de 50%.\n" +
+                   "Problemas com produto: contato imediato.\n\n";
+    
+    alert(termosText);
+}
+
+</script>
 </body>
 </html>

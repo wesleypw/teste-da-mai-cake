@@ -33,13 +33,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-nome">Nome Completo:</label>
-                                <input type="text" class="form-control" id="cad-nome" required>
+                                <input type="text" class="form-control" id="cad-nome" minlength="3" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-sobrenome">Sobrenome:</label>
-                                <input type="text" class="form-control" id="cad-sobrenome" required>
+                                <input type="text" class="form-control" id="cad-sobrenome" minlength="5" required>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-email">Email:</label>
-                                <input type="email" class="form-control" id="cad-email" required>
+                                <input type="email" class="form-control" id="cad-email" minlength="5" required>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -63,13 +63,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-telefone">Telefone:</label>
-                                <input type="tel" class="form-control" id="cad-telefone" placeholder="(XX) XXXXX-XXXX">
+                                <input type="tel" class="form-control" id="cad-telefone" placeholder="(XX) XXXXX-XXXX" minlength="15" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="cad-nascimento">Data de Nascimento:</label>
-                                <input type="date" class="form-control" id="cad-nascimento">
+                                <label for="cad-cpf">CPF:</label>
+                                <input type="text" class="form-control" id="cad-cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" required>
                             </div>
                         </div>
                     </div>
@@ -78,31 +78,31 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-senha">Senha:</label>
-                                <input type="password" class="form-control" id="cad-senha" required>
+                                <input type="password" class="form-control" id="cad-senha" minlength="5" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-confirmar-senha">Confirmar Senha:</label>
-                                <input type="password" class="form-control" id="cad-confirmar-senha" required>
+                                <input type="password" class="form-control" id="cad-confirmar-senha" minlength="5" required>
                             </div>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <label for="cad-endereco">Endereço:</label>
-                        <input type="text" class="form-control" id="cad-endereco" placeholder="Rua, número, bairro">
+                        <input type="text" class="form-control" id="cad-endereco" placeholder="Rua, número, bairro" minlength="5" required>
                     </div>
                     
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="cad-cidade">Cidade:</label>
-                                <input type="text" class="form-control" id="cad-cidade">
+                                <input type="text" class="form-control" id="cad-cidade" minlength="5" required>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="form-group">
+                            <div class="form-group" style="width: 190px;">
                                 <label for="cad-estado">Estado:</label>
                                 <select class="form-control" id="cad-estado">
                                     <option value="">Selecione</option>
@@ -136,10 +136,10 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
+                        <div class="col-md-3">
+                            <div class="form-group" style="width: 190px;">
                                 <label for="cad-cep">CEP:</label>
-                                <input type="text" class="form-control" id="cad-cep" placeholder="XXXXX-XXX">
+                                <input type="text" class="form-control" id="cad-cep" placeholder="XXXXXXXX" maxlength="8" size="15">
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                     
                     <div class="form-group">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="cad-newsletter" required>
+                            <input class="form-check-input" type="checkbox" id="cad-newsletter">
                             <label class="form-check-label" for="cad-newsletter">
                                 Deseja receber nossa newsletter semanal com promoções e novidades?
                             </label>
@@ -188,70 +188,220 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>Informações</h5>
-                <p><a href="index.html#faq" style="color: white;">FAQ</a></p>
-                <p><a href="index.html#trabalhe" style="color: white;">Trabalhe Conosco</a></p>
-                <p><a href="#" style="color: white;">Política de Privacidade</a></p>
-                <p><a href="#" style="color: white;">Termos de Uso</a></p>
+                <p><a href="#faq" style="color: white;" onclick="mostrarFAQ(); return false;">FAQ</a></p>
+                <p><a href="#trabalhe" style="color: white;" onclick="mostrarTrabalhe(); return false;">Trabalhe Conosco</a></p>
+                <p><a href="#" style="color: white;" onclick="mostrarPrivacidade(); return false;">Política de Privacidade</a></p>
+                <p><a href="#" style="color: white;" onclick="mostrarTermos(); return false;">Termos de Uso</a></p>
             </div>
-
+            
         </div>
         <hr style="background-color: white;">
         <p>&copy; 2026 Doceria. Todos os direitos reservados.</p>
     </div>
-
-<div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="termosModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="termosModalLabel">Termos de Uso</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Ao se cadastrar em nossa doceria, você concorda com nossos termos de uso...</p>
-                <p>1. Aceitação dos Termos</p>
-                <p>2. Uso dos Serviços</p>
-                <p>3. Privacidade e Dados</p>
-                <p>4. Propriedade Intelectual</p>
-                <p>5. Cancelamento e Reembolso</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Política de Privacidade -->
-<div class="modal fade" id="privacidadeModal" tabindex="-1" role="dialog" aria-labelledby="privacidadeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="privacidadeModalLabel">Política de Privacidade</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Nossa política de privacidade descreve como coletamos, usamos e protegemos suas informações...</p>
-                <p>1. Informações Coletadas</p>
-                <p>2. Uso das Informações</p>
-                <p>3. Compartilhamento de Dados</p>
-                <p>4. Segurança</p>
-                <p>5. Seus Direitos</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-    <p>Siga-nos nas redes sociais: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">WhatsApp</a></p>
+    <p>Siga-nos nas redes sociais: <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a></p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+// Formatação de CPF
+document.getElementById('cad-cpf').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+    
+    if (value.length <= 3) {
+        e.target.value = value;
+    } else if (value.length <= 6) {
+        e.target.value = value.slice(0, 3) + '.' + value.slice(3);
+    } else if (value.length <= 9) {
+        e.target.value = value.slice(0, 3) + '.' + value.slice(3, 6) + '.' + value.slice(6);
+    } else {
+        e.target.value = value.slice(0, 3) + '.' + value.slice(3, 6) + '.' + value.slice(6, 9) + '-' + value.slice(9, 11);
+    }
+});
+
+// Formatação de Telefone
+document.getElementById('cad-telefone').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+    
+    if (value.length <= 2) {
+        e.target.value = '(' + value;
+    } else if (value.length <= 7) {
+        e.target.value = '(' + value.slice(0, 2) + ') ' + value.slice(2);
+    } else {
+        e.target.value = '(' + value.slice(0, 2) + ') ' + value.slice(2, 7) + '-' + value.slice(7, 11);
+    }
+});
+
+// Validação de CPF
+function validarCPF(cpf) {
+    cpf = cpf.replace(/\D/g, '');
+    
+    if (cpf.length !== 11) return false;
+    if (/^(\d)\1{10}$/.test(cpf)) return false;
+    
+    let soma = 0;
+    let resto;
+    
+    for (let i = 1; i <= 9; i++) {
+        soma += parseInt(cpf.substring(i - 1, i)) * (11 - i);
+    }
+    
+    resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(cpf.substring(9, 10))) return false;
+    
+    soma = 0;
+    for (let i = 1; i <= 10; i++) {
+        soma += parseInt(cpf.substring(i - 1, i)) * (12 - i);
+    }
+    
+    resto = (soma * 10) % 11;
+    if (resto === 10 || resto === 11) resto = 0;
+    if (resto !== parseInt(cpf.substring(10, 11))) return false;
+    
+    return true;
+}
+
+// Validação do formulário
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const cpf = document.getElementById('cad-cpf').value;
+    const senha = document.getElementById('cad-senha').value;
+    const confirmarSenha = document.getElementById('cad-confirmar-senha').value;
+    const email = document.getElementById('cad-email').value;
+    const confirmarEmail = document.getElementById('cad-confirmar-email').value;
+    
+    // Validar CPF
+    if (!validarCPF(cpf)) {
+        alert('CPF inválido! Por favor, verifique os dados informados.');
+        return false;
+    }
+    
+    // Validar senhas
+    if (senha !== confirmarSenha) {
+        alert('As senhas não coincidem! Por favor, verifique.');
+        return false;
+    }
+    
+    // Validar emails
+    if (email !== confirmarEmail) {
+        alert('Os emails não coincidem! Por favor, verifique.');
+        return false;
+    }
+    
+    // Validar campos obrigatórios
+    const camposObrigatorios = document.querySelectorAll('[required]');
+    for (let campo of camposObrigatorios) {
+        if (!campo.value.trim()) {
+            alert('Por favor, preencha todos os campos obrigatórios!');
+            campo.focus();
+            return false;
+        }
+        
+        // Validar tamanho mínimo
+        if (campo.hasAttribute('minlength') && campo.value.length < parseInt(campo.getAttribute('minlength'))) {
+            const label = campo.previousElementSibling.textContent;
+            alert(`${label} deve ter pelo menos ${campo.getAttribute('minlength')} caracteres!`);
+            campo.focus();
+            return false;
+        }
+    }
+    
+    alert('Cadastro realizado com sucesso! Em breve você receberá um email de confirmação.');
+    this.reset();
+});
+
+function mostrarFAQ() {
+    var faqText = "=== FAQ - PERGUNTAS FREQUENTES ===\n\n" +
+                 "1. COMO FAÇO PARA FAZER UM PEDIDO?\n" +
+                 "Você pode fazer seu pedido de três formas:\n" +
+                 "- Pelo nosso formulário de cadastro no site\n" +
+                 "- Pelo WhatsApp (11) 9999-9999\n" +
+                 "- Ligando diretamente para nossa loja\n\n" +
+                 "2. QUAL O PRAZO DE ENTREGA?\n" +
+                 "- Pedidos mínimos: 24 horas de antecedência\n" +
+                 "- Pedidos acima de 50 unidades: 48 horas\n" +
+                 "- Entrega em toda região metropolitana de SP\n\n" +
+                 "3. FORMAS DE PAGAMENTO?\n" +
+                 "- Cartão de crédito (todas bandeiras)\n" +
+                 "- Cartão de débito\n" +
+                 "- PIX\n" +
+                 "- Transferência bancária\n" +
+                 "- Dinheiro\n\n" +
+                 "4. COMO ARMAZENAR OS DOCES?\n" +
+                 "- Bolos e tortas: geladeira, consumir em 3 dias\n" +
+                 "- Brownies e cookies: temperatura ambiente, 5 dias\n\n"                  
+    
+    alert(faqText);
+}
+
+function mostrarTrabalhe() {
+    var trabalhoText = "=== TRABALHE CONOSCO ===\n\n" +
+                    "🎯 REQUISITOS:\n" +
+                    "• Boa comunicação\n" +
+                    "• Organização e pontualidade\n" +
+                    "• Paixão por confeitaria\n" +
+                    "• Disponibilidade para fins de semana\n" +
+                    "• Ensino médio completo\n\n" +
+                    "🎁 BENEFÍCIOS:\n" +
+                    "• Salário compatível com mercado\n" +
+                    "• Vale-transporte e alimentação\n" +
+                    "• Desconto em produtos\n" +
+                    "• Oportunidade de crescimento\n\n" +
+                    "📝 COMO SE CANDIDATAR:\n" +
+                    "Envie currículo para: rh@doceria.com\n" +
+                    "Assunto: 'Vaga [Nome] - [Seu Nome]'\n" +
+                    "Telefone: (11) 9999-9999";
+    
+    alert(trabalhoText);
+}
+
+function mostrarPrivacidade() {
+    var privacidadeText = "=== POLÍTICA DE PRIVACIDADE ===\n\n" +
+                       "1. INFORMAÇÕES COLETADAS:\n" +
+                       "Coletamos nome, e-mail, telefone, endereço e dados de pagamento\n" +
+                       "essenciais para prestar nossos serviços.\n\n" +
+                       "2. USO DAS INFORMAÇÕES:\n" +
+                       "Processar pedidos, comunicação, informações sobre produtos\n" +
+                       "e melhoria do atendimento. Nunca compartilhamos sem autorização.\n\n" +
+                       "3. COMPARTILHAMENTO:\n" +
+                       "Apenas com parceiros essenciais (entregas e pagamentos)\n" +
+                       "que seguem padrões rigorosos de segurança.\n\n" +
+                       "4. SEGURANÇA:\n" +
+                       "Criptografia SSL em transações e servidores seguros.\n" +
+                       "Equipe treinada para proteger seus dados.\n\n" +
+                       "5. SEUS DIREITOS:\n" +
+                       "Acessar, corrigir ou excluir dados a qualquer momento.\n" +
+                       "Contato: privacidade@doceria.com | (11) 9999-9999";
+    
+    alert(privacidadeText);
+}
+
+function mostrarTermos() {
+    var termosText = "=== TERMOS DE USO ===\n\n" +
+                   "1. ACEITAÇÃO:\n" +
+                   "Ao acessar nosso site e usar nossos serviços, você concorda\n" +
+                   "integralmente com estes Termos de Uso.\n\n" +
+                   "2. USO DOS SERVIÇOS:\n" +
+                   "Serviços destinados a maiores de 18 anos ou acompanhados.\n" +
+                   "Compromete-se a fornecer informações verdadeiras.\n\n" +
+                   "3. PEDIDOS E PAGAMENTOS:\n" +
+                   "Pedidos sujeitos à disponibilidade e confirmação.\n" +
+                   "Preços podem mudar, mas pedidos confirmados mantêm valor.\n\n" +
+                   "4. PROPRIEDADE INTELECTUAL:\n" +
+                   "Todo conteúdo do site é protegido por direitos autorais.\n" +
+                   "Proibida reprodução sem autorização expressa.\n\n" +
+                   "5. CANCELAMENTO E REEMBOLSO:\n" +
+                   "Cancelamento com 24h: reembolso integral.\n" +
+                   "Menos de 24h: taxa de 50%.\n" +
+                   "Problemas com produto: contato imediato.\n\n";
+    
+    alert(termosText);
+}
+
+</script>
 </body>
 </html>
